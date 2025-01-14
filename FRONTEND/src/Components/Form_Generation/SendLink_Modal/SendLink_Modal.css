@@ -1,0 +1,23 @@
+.modal_header{
+    padding: 0.8rem;
+}
+
+.heading_input > input{
+    width: 100% ;
+    outline: none;
+    border: 2px solid rgb(224,224,224);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.cancel_copy_btns{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    margin-top: 0.7rem;
+}
+
+.cancel_copy_btns > Button{
+    font-weight: 500;
+}

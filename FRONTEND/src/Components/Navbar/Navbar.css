@@ -1,0 +1,124 @@
+.main_nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: #ffffff7d;
+}
+
+.icon-logo{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.313rem;
+    cursor: pointer;
+}
+
+.LogoAndName{
+    display: flex;
+}
+
+.brand_name{
+    font-weight: 650;
+}
+
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-profile img{
+    max-width: 3.125rem;
+    max-height: 3.125rem;
+    cursor: pointer;
+}
+
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0.625rem;
+    top: 3.719rem;
+    z-index: 1;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    padding: 0.625rem 0.938rem;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: 2px solid white;
+    list-style: none;
+}
+
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.navbar-profile-dropdown-para{
+    margin-bottom: 0;
+}
+
+.navbar-profile-dropdown img{
+    width: 1.25rem;
+}
+
+.navbar-profile-dropdown li:hover{
+    color: black;
+}
+
+.login-signup-btns{
+    display: flex;
+}
+
+.login-btn{
+    margin-right: 0.5rem;
+    border: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px ;
+    font-size: 1rem;
+}
+
+.login-btn:hover{
+ background-color: rgb(238, 236, 236);   
+}
+
+@media(max-width:768px){
+    .icon-logo{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.45rem;
+    }
+
+    .brand_name{
+        font-size:2rem;
+    }
+
+    .login-btn, .signup-btn{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:480px){
+    .icon-logo{
+        width: 2rem;
+        height: 2.25rem;
+        margin-right: 0.45rem;
+    }
+
+    .brand_name{
+        font-size:1.35rem;
+    }
+
+    .login-btn, .signup-btn{
+        font-size: 1rem;
+    }
+}

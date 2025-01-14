@@ -1,0 +1,99 @@
+.All_submissions_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.All_submissions_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  max-width: 2000px;
+  padding: 2.5rem 1.75rem;
+}
+
+.All_submissions_h1_p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.All_submissions_h1_p > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  line-height: 2.25rem;
+  margin-bottom: 0;
+}
+
+.All_submissions_h1_p > p {
+  font-size: 1.15rem;
+  color: #6e6e77;
+}
+
+.All_submissions_user_data {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.All_submissions_userData_headings {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  background-color: #f9f9fa;
+  padding: 0.75rem 0;
+}
+
+.All_submissions_userData_headings > p {
+  margin-bottom: 0;
+  color: #6e6e77;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+.All_submissions_userData_headings_hr {
+  margin-top: 0;
+}
+
+.All_submissions_userData_data {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+}
+
+.All_submissions_userData_data > Button{
+  font-weight: 500;
+}
+
+.All_submissions_userData_data > p {
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.All_submissions_useCase {
+  display: flex;
+  flex-direction: column;
+}
+
+.All_submissions_No_response_Para {
+  font-size: 1.5rem;
+  font-weight: 500;
+  align-self: center;
+  margin-top: 1rem;
+  color: #6e6e77;
+}
+
+@media (max-width: 480px) {
+  .All_submissions_div {
+    max-width: 480px;
+    width: 100%;
+  }
+  .All_submissions_userData_data {
+    grid-template-columns: 0.7fr 0.5fr 0.1fr;
+  }
+  .All_submissions_userData_data_email {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

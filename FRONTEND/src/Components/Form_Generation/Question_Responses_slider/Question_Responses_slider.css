@@ -1,0 +1,30 @@
+.Question_Responses_slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #18181b;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.Question_Responses_slider_para > p {
+  margin-bottom: 0;
+  color: #b4b4b7be;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Question_Responses_slider_para > p:hover {
+  color: white;
+}
+
+.Slider_text_active_ques,
+.Slider_text_active_res {
+  color: white !important; /* Added !important to ensure it overrides other styles */
+}
